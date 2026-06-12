@@ -1,47 +1,60 @@
-# EventSphere: A Streamlined Campus Event Management System
+# EventSphere — Event Management System
 
-Introducing an Event Management System, a solution developed and designed to streamline campus event planning, registration, and ticket booking. I as an architect, created the user interface where I incorporated modern design principles and prioritized user experience. I had developed the system using the MERN stack (MongoDB, Express.js, React.js, Node.js), and utilizing the agile Scrum methodology for efficient development.
+A platform for event planning, registration, and ticket booking, built with modern design principles and a focus on user experience. Developed using the MERN stack (MongoDB, Express.js, React.js, Node.js).
 
-**Skills:** *Figma · Ui/ux · React.js · MongoDB · Node.js · Express.js · Requirements Analysis · User Interface Design*
+## Features
 
-**Features**
-* Schedule a Event.
-* View upcoming events.
-* View the event calendar.
-* Getting approval for the events.
-* Ticket Booking for the event.
-* QR Code generation for receiving tickets.
+- Schedule an event
+- View upcoming events
+- View the event calendar
+- Event approval workflow
+- Ticket booking with QR code generation
 
-**Technologies Used**
-* ReactJs
-* NodeJs
-* ExpressJs
-* MongoDB
-* NPM (Node Package Manager)
-* JWT webtoken
-* QR code
+## Tech Used
 
-**_Getting Started_**
+- React.js
+- Node.js
+- Express.js
+- MongoDB
+- JWT for authentication
+- QR code generation
 
-**Prerequisites**
-* Node.js and npm installed
-* MongoDB Database
+## Getting Started
 
-**Instalaltion**
-1. Clone the repository to your local machine.
-2. Navigate to the project directory. use two terminal <br>
-    **Cd Client** - For Frontend <br>
-    **Cd api** - For Backend <br>
-3. Install server dependenciesfor both frontend and backend.
-4. Create a .env file in the root directory with the following content, and replace placeholders with your own values. <br>
-     MONGODB_URI=mongodb://localhost/your-database-name
-5. Start the server.<br>
-     **ems/api:** nodemon start<br>
-     if the command is not working use **PowerShell -ExecutionPolicy Bypass nodemon** this command.
-7. Start the Client:<br>
-      **ems/client:** npm run dev
+### Prerequisites
 
-**The application should now be running. You can access it at http://localhost:5173**<br>
-**The Server is running on http://localhost:4000**
+- Node.js and npm installed
+- MongoDB database
 
-<h1>Thank You</h1>
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/rajpanchal0101/-EventSphere-A-Streamlined-Campus-Event-Management-System.git
+   cd -EventSphere-A-Streamlined-Campus-Event-Management-System
+   ```
+
+2. Install dependencies for both frontend and backend:
+   ```bash
+   cd client && npm install
+   cd ../api && npm install
+   ```
+
+3. Create a `.env` file in the `api` directory with your MongoDB connection string:
+   ```
+   MONGODB_URI=mongodb://localhost/your-database-name
+   ```
+
+4. Start the backend:
+   ```bash
+   cd api
+   nodemon start
+   ```
+
+5. Start the frontend:
+   ```bash
+   cd client
+   npm run dev
+   ```
+
+The frontend runs at `http://localhost:5173` and the backend at `http://localhost:4000`.
